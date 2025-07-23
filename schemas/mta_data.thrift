@@ -186,7 +186,7 @@ service WebSocketService {
     /**
      * Start real-time updates for specific lines
      * @param line_ids: List of line IDs to subscribe to
-     * @param update_interval_seconds: Update frequency in seconds (default: 30)
+     * @param update_interval_seconds: Update frequency in seconds (default: 10)
      * @returns: Subscription ID for managing the subscription
      * @throws: InvalidLineException if line not supported
      * @throws: MTAServiceException for other errors

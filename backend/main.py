@@ -183,7 +183,7 @@ async def websocket_endpoint(websocket: WebSocket):
             # Handle different message types from client
             if message.get("type") == "subscribe":
                 lines = message.get("lines", ["N", "Q", "R", "W"])
-                update_interval = message.get("update_interval", 30)
+                update_interval = message.get("update_interval", 10)
                 
                 # Create subscription
                 subscription_id = await websocket_service.subscribeToLineUpdates(lines, update_interval)
